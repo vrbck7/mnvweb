@@ -226,6 +226,16 @@ main.doc {
   padding: 56px 24px 96px;
 }
 
+.back {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.back:hover, .back:focus-visible { color: var(--red); }
+
 main.doc h1 {
   font-size: clamp(26px, 4.5vw, 36px);
   letter-spacing: -0.03em;
