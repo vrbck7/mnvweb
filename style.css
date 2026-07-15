@@ -1,5 +1,5 @@
 :root {
-  --red: #AA1D1D;
+  --red: #E0342B;
   --ink: #1C1B1A;
   --muted: #6E6A66;
   --line: #E9E5E1;
@@ -55,7 +55,7 @@ header {
 }
 
 .logo-text {
-  color: var(--red);
+  color: #AA1D1D;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
