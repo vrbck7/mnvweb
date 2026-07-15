@@ -80,49 +80,56 @@ a:focus-visible {
 .hero {
   max-width: 760px;
   margin: 0 auto;
-  padding: 72px 24px 48px;
+  padding: 72px 24px 56px;
 }
 
-.hero h1 {
-  font-size: clamp(30px, 5vw, 42px);
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+.eyebrow {
+  color: #7D2524;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: 14px;
 }
 
-.hero p {
+.hero h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+
+.hero p:not(.eyebrow) {
   color: var(--muted);
-  max-width: 54ch;
-}
-
-/* ---------- About (index) ---------- */
-.about {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px 48px;
-}
-
-.about h2 {
-  font-size: 19px;
-  letter-spacing: -0.01em;
-  margin-bottom: 10px;
-}
-
-.about p {
-  color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 12px;
   max-width: 62ch;
+  margin-bottom: 14px;
 }
 
-.about p strong { color: var(--ink); }
+.hero h1 + p {
+  color: var(--ink);
+  font-size: 18px;
+}
 
 .doc-list {
   max-width: 760px;
   margin: 0 auto;
-  padding: 0 24px 80px;
+  padding: 8px 24px 80px;
   display: grid;
   gap: 14px;
+}
+
+.doc-list h2 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 2px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.doc-list-intro {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 8px;
 }
 
 .doc-card {
@@ -141,7 +148,7 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
-.doc-card h2 {
+.doc-card h3 {
   font-size: 19px;
   letter-spacing: -0.01em;
   margin-bottom: 4px;
