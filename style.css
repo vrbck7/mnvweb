@@ -116,16 +116,18 @@ a:focus-visible {
 .feature::before {
   content: "";
   display: block;
-  width: 28px;
-  height: 3px;
-  border-radius: 2px;
+  width: 11px;
+  height: 11px;
   background: var(--red);
-  margin-bottom: 12px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  margin: 2px 0 14px 2px;
 }
 
 .feature p {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 1.65;
   margin: 0;
 }
 
