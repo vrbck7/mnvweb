@@ -6,6 +6,7 @@
   <title>Zásady ochrany osobných údajov – Monvee</title>
   <meta name="description" content="Zásady ochrany osobných údajov (Privacy Policy) aplikácie Monvee v súlade s GDPR.">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,10 @@
     <nav>
       <a href="obchodne-podmienky.html">Podmienky</a>
       <a href="ochrana-sukromia.html">Súkromie</a>
-      <a href="mailto:contact@monveeapp.com">Kontakt</a>
+      <span class="contact-wrap">
+        <a href="#" id="contact-toggle">Kontakt</a>
+        <span class="contact-pop" id="contact-pop" hidden>Kontakt: <a href="mailto:contact@monveeapp.com">contact@monveeapp.com</a></span>
+      </span>
     </nav>
   </div>
 </header>
@@ -109,5 +113,16 @@
   </div>
 </footer>
 
+<script>
+  var t = document.getElementById('contact-toggle');
+  var p = document.getElementById('contact-pop');
+  t.addEventListener('click', function (e) {
+    e.preventDefault();
+    p.hidden = !p.hidden;
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.contact-wrap')) p.hidden = true;
+  });
+</script>
 </body>
 </html>
