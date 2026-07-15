@@ -113,23 +113,20 @@ a:focus-visible {
   padding: 20px 22px;
 }
 
-.feature::before {
-  content: "";
+.feature-icon {
   display: block;
-  width: 11px;
-  height: 11px;
-  background: var(--red);
-  transform: rotate(45deg);
-  border-radius: 2px;
-  margin: 2px 0 14px 2px;
+  color: var(--red);
+  margin-bottom: 12px;
 }
 
 .feature p {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.65;
-  margin: 0;
+  margin: 0 0 10px;
 }
+
+.feature p:last-child { margin-bottom: 0; }
 
 @media (max-width: 620px) {
   .hero-features { grid-template-columns: 1fr; }
