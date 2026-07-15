@@ -68,45 +68,9 @@ nav a {
   margin-left: 20px;
 }
 
-nav a:hover, nav .contact {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px 56px;
-}
+nav a:hover, nav a:focus-visible { color: var(--red); }
 
-.contact h2 {
-  font-size: 24px;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-}
-
-.contact p {
-  font-size: 16px;
-  color: var(--ink);
-}
-
-.contact a { color: var(--red); }
-
-a:focus-visible { color: var(--red); }
-
-.contact {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px 56px;
-}
-
-.contact h2 {
-  font-size: 24px;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-}
-
-.contact p {
-  font-size: 16px;
-  color: var(--ink);
-}
-
-.contact a { color: var(--red); }
+nav a.active { color: var(--red); }
 
 a:focus-visible {
   outline: 2px solid var(--red);
@@ -170,6 +134,7 @@ a:focus-visible {
   .hero-features { grid-template-columns: 1fr; }
 }
 
+/* ---------- Documents (index) ---------- */
 .doc-list {
   max-width: 760px;
   margin: 0 auto;
@@ -218,6 +183,26 @@ a:focus-visible {
   color: var(--muted);
   font-size: 15px;
 }
+
+/* ---------- Contact ---------- */
+.contact {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 56px;
+}
+
+.contact h2 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.contact p {
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.contact a { color: var(--red); }
 
 /* ---------- Legal document pages ---------- */
 main.doc {
