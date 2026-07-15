@@ -1,5 +1,5 @@
 :root {
-  --red: #E0342B;
+  --red: #B70909;
   --ink: #1C1B1A;
   --muted: #6E6A66;
   --line: #E9E5E1;
@@ -55,7 +55,7 @@ header {
 }
 
 .logo-text {
-  color: #7D2524;
+  color: #B70909;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -84,7 +84,7 @@ a:focus-visible {
 }
 
 .hero h1 {
-  font-size: clamp(32px, 5.5vw, 48px);
+  font-size: clamp(26px, 4.4vw, 38px);
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin-bottom: 20px;
