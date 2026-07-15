@@ -74,6 +74,12 @@ nav a:hover, nav .contact {
   padding: 0 24px 56px;
 }
 
+.contact h2 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
 .contact p {
   font-size: 16px;
   color: var(--ink);
@@ -87,6 +93,12 @@ a:focus-visible { color: var(--red); }
   max-width: 760px;
   margin: 0 auto;
   padding: 0 24px 56px;
+}
+
+.contact h2 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
 }
 
 .contact p {
