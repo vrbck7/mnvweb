@@ -55,7 +55,7 @@ header {
 }
 
 .logo-text {
-  color: #7D2524;
+  color: #AA1D1D;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -68,9 +68,9 @@ nav a {
   margin-left: 20px;
 }
 
-nav a:hover, nav a:focus-visible { color: var(--red); }
+nav a:hover, nav a:focus-visible { color: #7D2524; }
 
-nav a.active { color: var(--red); }
+nav a.active { color: #7D2524; }
 
 a:focus-visible {
   outline: 2px solid var(--red);
