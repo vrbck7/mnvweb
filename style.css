@@ -61,12 +61,38 @@ header {
   letter-spacing: 0.02em;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   text-decoration: none;
   color: var(--muted);
   font-size: 15px;
   margin-left: 20px;
 }
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+  padding-right: 16px;
+  border-right: 1px solid var(--line);
+}
+
+.lang .flag {
+  display: inline-flex;
+  margin-left: 0;
+  line-height: 0;
+  opacity: 0.45;
+  border-radius: 2px;
+}
+
+.lang .flag:hover, .lang .flag:focus-visible { opacity: 1; }
+
+.lang .flag.active-lang { opacity: 1; }
 
 nav a:hover, nav a:focus-visible { color: #7D2524; }
 
