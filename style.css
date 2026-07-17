@@ -64,27 +64,26 @@ header {
 nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
 }
 
 nav a {
   text-decoration: none;
   color: var(--muted);
   font-size: 15px;
-  margin-left: 20px;
 }
 
 .lang {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-right: 4px;
-  padding-right: 16px;
+  padding-right: 14px;
   border-right: 1px solid var(--line);
 }
 
 .lang .flag {
   display: inline-flex;
-  margin-left: 0;
   line-height: 0;
   opacity: 0.45;
   border-radius: 2px;
@@ -309,7 +308,21 @@ footer {
 
 .footer-inner a:hover { color: var(--red); }
 
-@media (max-width: 520px) {
-  nav a { margin-left: 14px; }
-  .hero { padding-top: 48px; }
+@media (max-width: 680px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 8px 16px;
+  }
+
+  .hero { padding: 44px 20px 40px; }
+  .doc-list, .contact { padding-left: 20px; padding-right: 20px; }
+  main.doc { padding: 36px 20px 72px; }
+  .feature { padding: 18px; }
+  .footer-inner { justify-content: center; text-align: center; }
 }
